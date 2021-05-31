@@ -30,7 +30,7 @@ namespace MyStore.Conrollers
         {
             return View(_employee);
         }
-       public IActionResult MoreInfo(int id)
+       public  IActionResult MoreInfo(int id)
         {
             var employee = _employee.FirstOrDefault(employe => employe.Id == id);
 

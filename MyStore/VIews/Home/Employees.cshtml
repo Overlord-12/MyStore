@@ -1,4 +1,5 @@
 ﻿@model IEnumerable<MyStore.Models.Employee>
+ 
 <!DOCTYPE html>
 
 <html>
@@ -35,7 +36,7 @@
                     <td>@employee.LastName</td>
                     <td>@employee.Number</td>
                     <td>
-                        <a asp-controller="Home" asp-action="EmployeDetails" asp-route-id="@employee.Id">
+                        <a asp-controller="Home" asp-action="MoreInfo" asp-route-id="@employee.Id">
                             edit
                         </a>
                     </td>
