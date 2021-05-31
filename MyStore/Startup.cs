@@ -33,7 +33,7 @@ namespace MyStore
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            app.UseStaticFiles();
             app.UseRouting();
 
             var greetings = Configuration["Greeting"];
