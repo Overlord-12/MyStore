@@ -39,5 +39,17 @@ namespace MyStore.Conrollers
 
             return View(employee);
         }
+        public IActionResult Shop()
+        {
+            return View();
+        }
+        public IActionResult Blog()
+        {
+            return View();
+        }
+        public IActionResult BlogSingle()
+        {
+            return View();
+        }
     }
 }
