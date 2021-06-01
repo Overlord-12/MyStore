@@ -1,0 +1,41 @@
+﻿@model IEnumerable<MyStore.Models.Employee>
+ 
+<div width ="50%">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Id
+                </th>
+                <th>
+                    FirstName
+                </th>
+                <th>
+                    LastName
+                </th>
+                <th>
+                    TelephoneNumber
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var employee in Model)
+            {
+                <tr>
+                    <td>@employee.Id</td>
+                    <td>@employee.FirstName</td>
+                    <td>@employee.LastName</td>
+                    <td>@employee.Number</td>
+                    <td>
+                        <a asp-controller="Home" asp-action="MoreInfo" asp-route-id="@employee.Id">
+                            edit
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+
+</div>
+   
