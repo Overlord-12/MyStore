@@ -1,16 +1,7 @@
 ﻿@model IEnumerable<MyStore.Models.Employee>
  
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Employees</title>
-</head>
-<body>
-    <p><a href="/Home/Index">Главная</a></p>
-    <h3>Employees Store</h3>
-    <table>
+<div width ="50%">
+    <table class="table">
         <thead>
             <tr>
                 <th>
@@ -28,7 +19,7 @@
             </tr>
         </thead>
         <tbody>
-            @foreach(var employee in Model)
+            @foreach (var employee in Model)
             {
                 <tr>
                     <td>@employee.Id</td>
@@ -44,5 +35,7 @@
             }
         </tbody>
     </table>
-</body>
-</html>
+
+
+</div>
+   
