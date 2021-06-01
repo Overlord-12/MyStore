@@ -51,5 +51,13 @@ namespace MyStore.Conrollers
         {
             return View();
         }
+        public IActionResult Error()
+        {
+            return View();
+        }
+        public IActionResult Contact()
+        {
+            return View();
+        }
     }
 }
